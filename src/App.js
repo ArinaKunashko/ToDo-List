@@ -35,7 +35,6 @@ function App() {
     }
   }
 
-
   const saveLocalTodos = () => {
     localStorage.setItem('todos', JSON.stringify(todos))
   }
@@ -49,9 +48,8 @@ function App() {
     }
   }
 
-
   return (
-    <div className="App">
+    <div className='App'>
       <header>
         <h1> What's the Plan for Today?</h1>
       </header>
@@ -67,7 +65,7 @@ function App() {
         filteredTodos={filteredTodos}
       />
     </div>
-  );
+  )
 }
 
 export default App
