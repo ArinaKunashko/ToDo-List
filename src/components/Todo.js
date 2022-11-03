@@ -1,4 +1,11 @@
-import React from "react";
+import React from 'react'
+import Stack from '@mui/material/Stack'
+import Button from '@mui/material/Button';
+import DeleteIcon from '@mui/icons-material/Delete'
+import Grid from '@mui/material/Grid'
+import DoneAllIcon from '@mui/icons-material/DoneAll'
+import ModeEditOutlineIcon from '@mui/icons-material/ModeEditOutline'
+
 
 
 const Todo = ({ text, todo, todos, setTodos }) => {
@@ -19,18 +26,16 @@ const Todo = ({ text, todo, todos, setTodos }) => {
     }
 
     return (
-        <div className="todo">
-            <li className={`todo-item ${todo.completed ? "completed" : ""}`}> {text} </li>
-            <button onClick={completeHandler} className="complete-btn">
-                <i className="fas fa-check"> </i>
-            </button>
-            <button onClick={deleteHandler} className="complete-btn" >
-                <i className="fas fa-trash"> </i>
-            </button>
-            <button onClick={deleteHandler} className="complete-btn" >
-                Update
-            </button>
+        <div className='todo'>
 
+            <li className={`todo-item ${todo.completed ? 'completed' : ''}`}> {text} </li>
+            <Stack spacing={2} direction='row'>
+                <Grid item xs={11}>
+                    <DoneAllIcon color='action' onClick={completeHandler} />
+                    <DeleteIcon color='action' onClick={deleteHandler} />
+                    <ModeEditOutlineIcon color='success' onClick={deleteHandler} />
+                </Grid>
+            </Stack>
         </div>
     )
 }

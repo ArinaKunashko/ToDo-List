@@ -1,11 +1,11 @@
-import React from "react";
-import Todo from "./Todo";
+import React from 'react'
+import Todo from './Todo'
 
 const ToDoList = ({ setTodos, todos, filteredTodos }) => {
 
     return (
-        <div className="todo-container">
-            <ul className="todo-list">
+        <div className='todo-container'>
+            <ul className='todo-list'>
                 {filteredTodos.map((todo) => (
                     <Todo setTodos={setTodos}
                         todos={todos}
@@ -18,4 +18,4 @@ const ToDoList = ({ setTodos, todos, filteredTodos }) => {
     )
 }
 
-export default ToDoList; 
+export default ToDoList

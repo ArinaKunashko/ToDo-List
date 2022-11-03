@@ -1,17 +1,16 @@
-import React, { useState, useEffect } from "react";
-import './App.css';
-import Form from "./components/Form";
-import ToDoList from "./components/ToDoList";
+import React, { useState, useEffect } from 'react'
+import './App.css'
+import Form from './components/Form'
+import ToDoList from './components/ToDoList'
 
 
 function App() {
 
-  const [inputText, setInputText] = useState("")
+  const [inputText, setInputText] = useState('')
   const [todos, setTodos] = useState([])
   const [status, setStatus] = useState('all')
   const [filteredTodos, setfilteredTodos] = useState([])
   
-
   useEffect(() => {
     getLocalTodos()
   }, [])
@@ -34,19 +33,18 @@ function App() {
         setfilteredTodos(todos)
         break;
     }
-
   }
 
 
   const saveLocalTodos = () => {
-    localStorage.setItem("todos", JSON.stringify(todos))
+    localStorage.setItem('todos', JSON.stringify(todos))
   }
 
   const getLocalTodos = () => {
-    if (localStorage.getItem("todos") === null) {
-      localStorage.setItem("todos", JSON.stringify([]))
+    if (localStorage.getItem('todos') === null) {
+      localStorage.setItem('todos', JSON.stringify([]))
     } else {
-      let todoLocal = JSON.parse(localStorage.getItem("todos"))
+      let todoLocal = JSON.parse(localStorage.getItem('todos'))
       setTodos(todoLocal)
     }
   }
@@ -57,7 +55,6 @@ function App() {
       <header>
         <h1> What's the Plan for Today?</h1>
       </header>
-
       <Form inputText={inputText}
         todos={todos}
         setTodos={setTodos}
@@ -73,4 +70,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
