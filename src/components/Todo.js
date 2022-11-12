@@ -59,7 +59,10 @@ const Todo = ({ text, todo, todos, setTodos, }) => {
             {editMode &&
                 <>
                     <FormControl variant='filled' fullWidth>
-                        <InputLabel htmlFor="todo-adornment" sx={{ color: '#000000', '&.Mui-focused': { color: '#000000' } }}>Update Todo</InputLabel>
+                        <InputLabel htmlFor="todo-adornment"
+                            sx={{ color: '#000000', '&.Mui-focused': { color: '#000000' } }}>
+                            Update Todo
+                        </InputLabel>
                         <FilledInput
                             id="todo-adornment"
                             autoFocus
@@ -77,7 +80,7 @@ const Todo = ({ text, todo, todos, setTodos, }) => {
                             }]}
                             endAdornment={
                                 <InputAdornment position='end'>
-                                    <IconButton onClick={saveHandler} type='submit' size='medium' color='success' edge='start' >
+                                    <IconButton onClick={saveHandler} type='submit' size='medium' color='success' edge='start'>
                                         <FileDownloadDoneIcon />
                                     </IconButton>
                                 </InputAdornment>

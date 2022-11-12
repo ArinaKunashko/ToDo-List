@@ -55,7 +55,10 @@ const Form = ({ setInputText, todos, setTodos, inputText, status, setStatus }) =
             >
                 <form onSubmit={submitTodoHandler}>
                     <FormControl variant='filled' fullWidth>
-                        <InputLabel htmlFor="todo-adornment" sx={{ color: '#000000', '&.Mui-focused': { color: '#000000' } }}>Add Todo</InputLabel>
+                        <InputLabel htmlFor="todo-adornment"
+                            sx={{ color: '#000000', '&.Mui-focused': { color: '#000000' } }}>
+                            Add Todo
+                        </InputLabel>
                         <FilledInput
                             id="todo-adornment"
                             autoFocus

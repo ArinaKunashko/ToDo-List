@@ -5,18 +5,10 @@
   }
 
 body {
-  /* background-image: url('https://images.pexels.com/photos/531321/pexels-photo-531321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
-  /* background-image: url('https://images.pexels.com/photos/5249048/pexels-photo-5249048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
-  /* background-image: url('https://images.pexels.com/photos/10341389/pexels-photo-10341389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
-  /* background-image: url('https://images.pexels.com/photos/1331750/pexels-photo-1331750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
-  /* background-image: url('https://images.pexels.com/photos/2121957/pexels-photo-2121957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
-  /* background-image: url('https://images.pexels.com/photos/6495097/pexels-photo-6495097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
-  background-image: url('https://images.pexels.com/photos/6719784/pexels-photo-6719784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  /* background-image: url('https://images.pexels.com/photos/457074/pexels-photo-457074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
-  /* background-image: url('https://images.pexels.com/photos/910299/pexels-photo-910299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
-  /* background-image: url('https://images.pexels.com/photos/3105062/pexels-photo-3105062.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
-  /* background-image: url('https://images.pexels.com/photos/159108/light-lamp-electricity-power-159108.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
-  /* background-image: url('https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');  */
+  background-image: url('https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80');
+  /* background-image: url('https://images.unsplash.com/photo-1510070009289-b5bc34383727?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80'); */
+  /* background-image: url('https://images.unsplash.com/photo-1510936111840-65e151ad71bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1190&q=80'); */
+  
   background-repeat: no-repeat; 
   background-position: 100%;
   background-size: cover;
