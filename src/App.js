@@ -9,7 +9,7 @@ function App() {
   const [todos, setTodos] = useState([])
   const [status, setStatus] = useState('all')
   const [filteredTodos, setfilteredTodos] = useState([])
-  
+
   useEffect(() => {
     getLocalTodos()
   }, [])
@@ -47,24 +47,24 @@ function App() {
     }
   }
 
-  return (
-    <div className='App'>
-      <header>
-        <h1> What's the Plan for Today?</h1>
-      </header>
-      <Form inputText={inputText}
-        todos={todos}
-        setTodos={setTodos}
-        setInputText={setInputText}
-        status={status}
-        setStatus={setStatus}
-      />
-      <ToDoList setTodos={setTodos}
-        todos={todos}
-        filteredTodos={filteredTodos}
-      />
-    </div>
-  )
-}
+    return (
+      <div className='App'>
+        <header>
+          <h1> What's the Plan for Today?</h1>
+        </header>
+        <Form inputText={inputText}
+          todos={todos}
+          setTodos={setTodos}
+          setInputText={setInputText}
+          status={status}
+          setStatus={setStatus}
+        />
+        <ToDoList setTodos={setTodos}
+          todos={todos}
+          filteredTodos={filteredTodos}
+        />
+      </div>
+    )
+  }
 
-export default App
+  export default App
