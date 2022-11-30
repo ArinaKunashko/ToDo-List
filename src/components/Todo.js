@@ -93,7 +93,7 @@ const Todo = ({ text, todo, todos, setTodos, }) => {
                 <>
                     <li className={`todo-item ${todo.completed ? 'completed' : ''}`}> {text} </li>
                     <Stack spacing={2} direction='row'>
-                        <Grid item xs={11}>
+                        <Grid item xs={12} md={12} >
                             <IconButton onClick={completeHandler} size='medium' >
                                 <DoneAllIcon color='success' />
                             </IconButton>

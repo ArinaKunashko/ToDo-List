@@ -5,7 +5,7 @@
   }
 
 body {
-  background-image: url('https://images.unsplash.com/photo-1510070009289-b5bc34383727?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80');   
+ background-color: #1C2566;
   background-repeat: no-repeat; 
   background-position: 100%;
   background-size: cover;
@@ -20,6 +20,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 20px;
 }
 
 form {
@@ -27,17 +28,18 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1000px;
+  width: 80%;
 }
 
 .todo-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .todo-list {
-  min-width: 30%;
+  min-width: 20%;
   list-style: none;
 }
 
@@ -50,8 +52,7 @@ form {
   justify-content: space-between;
   align-items: center;
   transition: all 1s ease;
-  width: 440px;
-  min-height: 48px;
+  width: 100%;
 }
 
 .filter-todo {
