@@ -11,12 +11,6 @@ const theme = createTheme({
       white: '#efefef',
     },
   },
-  // typography: {
-  //   h1: {
-  //     fontSize: '5rem',
-  //     lineHeight: 1.06,
-  //   },
-  // }
 })
 
 theme.typography.h1 = {
