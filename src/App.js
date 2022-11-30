@@ -2,6 +2,29 @@ import React, { useState, useEffect } from 'react'
 import './App.css'
 import Form from './components/Form'
 import ToDoList from './components/ToDoList'
+import { createTheme, Typography } from '@mui/material/'
+import { ThemeProvider } from '@mui/material/styles'
+
+const theme = createTheme({
+  palette: {
+    text: {
+      white: '#efefef',
+    },
+  },
+  // typography: {
+  //   h1: {
+  //     fontSize: '5rem',
+  //     lineHeight: 1.06,
+  //   },
+  // }
+})
+
+theme.typography.h1 = {
+  fontSize: '4rem',
+  [theme.breakpoints.down('md')]: {
+    fontSize: '1.5rem',
+  },
+}
 
 function App() {
 
@@ -48,10 +71,9 @@ function App() {
   }
 
     return (
+      <ThemeProvider theme={theme}>
       <div className='App'>
-        <header>
-          <h1> What's the Plan for Today?</h1>
-        </header>
+          <Typography align='center' variant='h1' sx={{paddingTop:'40px'}}> What's the Plan for Today?</Typography>
         <Form inputText={inputText}
           todos={todos}
           setTodos={setTodos}
@@ -64,6 +86,7 @@ function App() {
           filteredTodos={filteredTodos}
         />
       </div>
+      </ThemeProvider>
     )
   }
 

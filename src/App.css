@@ -14,14 +14,6 @@ body {
   min-height: 100vh;
 }
 
-header {
-  font-size: 2rem;
-  min-height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 20px;
-}
 
 form {
   min-height: 20vh;
@@ -41,18 +33,27 @@ form {
 .todo-list {
   min-width: 20%;
   list-style: none;
+  
+  max-width: 90%;
 }
 
 .todo {
+  display: flex;
   margin: 0.5rem;
   background: white;
   font-size: 1.5rem;
   color: black;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   transition: all 1s ease;
   width: 100%;
+  word-wrap: break-word;
+}
+
+@media (max-width: 30rem ) {
+  .todo {
+    display: block;
+  }
 }
 
 .filter-todo {

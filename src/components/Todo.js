@@ -55,11 +55,11 @@ const Todo = ({ text, todo, todos, setTodos, }) => {
     }
 
     return (
-        <div className='todo'>
+        <li className='todo'>
             {editMode &&
                 <>
                     <FormControl variant='filled' fullWidth>
-                        <InputLabel htmlFor="todo-adornment"
+                        <InputLabel htmlFor='todo-adornment'
                             sx={{ color: '#000000', '&.Mui-focused': { color: '#000000' } }}>
                             Update Todo
                         </InputLabel>
@@ -91,7 +91,7 @@ const Todo = ({ text, todo, todos, setTodos, }) => {
             }
             {!editMode &&
                 <>
-                    <li className={`todo-item ${todo.completed ? 'completed' : ''}`}> {text} </li>
+                    <div className={`todo-item ${todo.completed ? 'completed' : ''}`}> {text} </div>
                     <Stack spacing={2} direction='row'>
                         <Grid item xs={12} md={12} >
                             <IconButton onClick={completeHandler} size='medium' >
@@ -107,7 +107,7 @@ const Todo = ({ text, todo, todos, setTodos, }) => {
                     </Stack>
                 </>
             }
-        </div>
+        </li>
     )
 }
 

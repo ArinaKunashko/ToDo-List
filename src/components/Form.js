@@ -44,6 +44,7 @@ const Form = ({ setInputText, todos, setTodos, inputText, status, setStatus }) =
                 component='aside'
                 sx={{
                     width: '800px',
+                    padding: '10px'
                 }}
                 spacing={2}
                 alignContent='center'
